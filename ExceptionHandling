@@ -1,0 +1,10 @@
+ try {
+        int result = a / 0; 
+        return true; 
+        
+ } catch (ArithmeticException e) {
+        throw new IllegalArgumentException("Invalid input: Cannot divide by zero", e);
+        
+ } finally {
+        System.out.println("Execution of processDivision completed."); 
+   }
